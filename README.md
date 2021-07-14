@@ -54,23 +54,23 @@ by a linked list. Lets take an example to understand this better.
 We take only two data types for this demonstration, an int and a float. We have two
 arrays, intArray, and floatArray. Also, we have a node class, and a linked list. </br>
 Suppose we add 1 to the array, now</br>
-intArray = {1}, floatArray = {}, linkedList = { ( ‘ i ’ , 0)}</br>
+```intArray = {1}, floatArray = {}, linkedList = { ( ‘ i ’ , 0)}```</br>
 Next we add 23 to the array, now</br>
-intArray = {1,23}, floatArray = {}, linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1)}</br>
+```intArray = {1,23}, floatArray = {}, linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1)}```</br>
 Next, we add 2.3f to the array, now</br>
-intArray = {1,23}, floatArray = {2.3}, linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1) --> ( ‘ f ’ , 0)}</br>
+```intArray = {1,23}, floatArray = {2.3}, linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1) --> ( ‘ f ’ , 0)}```</br>
 Next, we add 4 to the array, now</br>
 ```intArray = {1,23,4}, floatArray = {2.3}```</br>
 
-linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1) --> ( ‘ f ’ , 0) --> ( ‘ i ’ , 2)}</br>
+```linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1) --> ( ‘ f ’ , 0) --> ( ‘ i ’ , 2)}```</br>
 And so on.</br>
 
 Similarly, when an element is inserted, the same steps are followed. The element is
 added to the end of the respective array and the node is inserted at the required
 position, for example,</br>
 We insert 43.5f at index 2, now</br>
-intArray = {1,23,4}, floatArray = {2.3,43.5},</br>
-linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1) --> ( ‘ f ’ , 1) -- > ( ‘ f ’ , 0) --> ( ‘ i ’ , 2)}</br>
+```intArray = {1,23,4}, floatArray = {2.3,43.5}```</br>
+```linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1) --> ( ‘ f ’ , 1) -- > ( ‘ f ’ , 0) --> ( ‘ i ’ , 2)}```</br>
 Since the number is always inserted at the end of the array, the order of this</br>
 operation is O(1), also the order of inserting at the front or end of a linked list is
 O(1), and for somewhere in between, for average case, is much better than O(n). </br>
@@ -78,8 +78,8 @@ O(1), and for somewhere in between, for average case, is much better than O(n). 
 For deleting an element, one simply needs to remove the required node, and no
 changes in the array is required, and hence, the deletion is of the order same as
 that of a linked list. For example, we delete the element at index 3, now,</br>
-intArray = {1,23,4}, floatArray = {2.3,43.5},</br>
-linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1) --> ( ‘ f ’ , 1) -- > ( ‘ i ’ , 2)}</br>
+```intArray = {1,23,4}, floatArray = {2.3,43.5}```</br>
+```linkedList = { ( ‘ i ’ , 0) --> ( ‘ i ’ , 1) --> ( ‘ f ’ , 1) -- > ( ‘ i ’ , 2)}```</br>
 These are the methods to add, insert and delete data from the data structure. Some
 other methods are created to access the data, and print the array, etc.
 After all the data manipulations, the linked list needs to be converted to an array for
